@@ -1,0 +1,773 @@
+/* 헤더 부분 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+header {
+    font-family: 'Lato', sans-serif;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 24vw;
+    border-bottom: 1px solid #DDD;
+    color: #000;
+    background-color: #FFF;
+    z-index: 100;
+}
+
+header a h1 {
+    font-size: 5.2vw;
+    font-weight: 600;
+    letter-spacing: -0.3vw;
+    padding: 4.4vw 4vw;
+    border-bottom: 1px solid #DDD;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header li {
+    width: 33.3vw;
+}
+
+header li:hover {
+    margin-bottom: -1px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+header li:last-child {
+    position: absolute;
+    top: 2.2vw;
+    right: 0;
+}
+
+header li:last-child:hover {
+    border-bottom: 0;
+}
+
+header li a {
+    font-size: 3.4vw;
+    display: block;
+    padding: 3vw 1.5vw;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+header li:last-child a {
+    border-radius: 7vw;
+    width: 28.5vw;
+    padding: 2.8vw;
+    color: #FFF;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+header li:last-child:hover a {
+    color: var(--primary-color);
+    background-color: #FFF;
+}
+
+header li:last-child:active a {
+    color: #FFF;
+    background-color:var(--primary-color);
+}
+
+/* 소개 */
+#introduce {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 25.6vw;
+}
+
+#introduce h2 {
+    font-size: 7.2vw;
+    font-weight: 700;
+    letter-spacing: -0.15vw;
+    margin-bottom: 2vw;
+    text-align: center;
+}
+
+#introduce h3 {
+    font-size: 4vw;
+    font-weight: 700;
+    letter-spacing: -0.15vw;
+    margin-bottom: 2vw;
+    text-align: center;
+}
+
+#introduce ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.1vw;
+    padding: 5vw 0 10vw 0;
+    border-bottom: 1px solid #DDD;
+}
+
+#introduce ul li {
+    font-size: 3.8vw;
+    padding: 2.9vw 4.5vw;
+    border-radius: 10vw;
+    color: #264148;
+    background-color: var(--secondary-color);
+}
+
+/* 정보 */
+#information {
+    font-style: normal;
+    padding: 20vw 8vw;
+}
+
+#information dl{
+    display: block;
+}
+
+#information dt, dd{
+    font-size: 3.7vw;
+    display: inline-block;
+    margin-left: 4vw;
+    padding-bottom: 7vw;
+}
+
+#information dt {
+    font-weight: 700;
+    width: 25vw;
+}
+
+/* 프로젝트 */
+#projects {
+    padding: 24vw 4vw;
+    background-color: var(--secondary-color);
+}
+
+#projects .title {
+    color: var(--primary-color);
+}
+
+#projects .title h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 7.2vw;
+    font-weight: 700;
+    margin-bottom: 3.5vw;
+}
+
+#projects .title p {
+    font-size: 4vw;
+    font-weight: 400;
+    margin-bottom: 3.5vw;
+}
+
+#projects ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+#projects .card {
+    width: 100%;
+    height: 80vw;
+    border-radius: 7vw;
+    overflow: hidden;
+    box-shadow: 0 2vw 3vw rgba(0, 0, 0, 0.05);
+    background-color: #FFF;
+    z-index: 0; 
+}
+
+#projects .thumbnail {
+    position: relative;
+    height: 35%; 
+    overflow: hidden;
+}
+
+#projects .thumbnail img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translate3d(0, -50%, 0);
+}
+
+#projects .card .content {
+    margin: 5vw;
+    height: 30%;
+    overflow: hidden;
+}
+
+#projects .content dt {
+    font-size: 5vw;
+    font-weight: 700;
+    margin-bottom: 5vw;
+    color: #000;
+}
+
+#projects .content dd {
+    font-size: 3.7vw;
+    font-weight: 400;
+    line-height: 6vw;
+    color: #666;
+}
+
+#projects .go-site {
+    font-size: 3.7vw;
+    position: relative;
+    display: block;
+    margin: auto 5vw 5vw 5vw;
+    padding: 5vw;
+    width: 45%;
+    border: 1px solid var(--primary-color);
+    border-radius: 7vw;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+#projects .go-site .icon {
+    position: absolute;
+    top: 50%;
+    right: 11%;
+    width: 3.3vw;
+    height: 3.3vw;
+    transform: translate3d(0, -50%, 0);
+    background: url(../images/chevron-right.png) no-repeat 50%;
+    background-size: contain;
+}
+
+#experience {
+    padding: 24vw 4vw;
+}
+
+#experience .title {
+    border-bottom: 1vw solid #000;
+    color: var(--primary-color);
+}
+
+#experience .title h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 7.2vw;
+    font-weight: 700;
+    margin-bottom: 3.5vw;
+}
+
+#experience .title p {
+    font-size: 3.5vw;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 3.5vw;
+}
+
+#experience li {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-areas: 
+        "institution course"
+        "institution period";
+    padding: 8vw 4vw;
+    border-bottom: 1px dashed #DDD;
+}
+
+#experience li p {
+    font-size: 3.5vw;    
+}
+
+#experience .institution {
+    font-weight: 700;
+    grid-area: institution;
+    margin-right: 2vw;
+}
+
+#experience .course {
+    grid-area: course;
+    margin-bottom: 8vw;
+    color: #666;
+}
+
+#experience .period {
+    grid-area: period;
+    color: #666;
+}
+
+#retrospect {
+    padding: 24vw 0 24vw 4vw;
+    background-color: var(--secondary-color);
+    overflow-x: scroll;
+}
+
+#retrospect .title {
+    color: var(--primary-color);
+}
+
+#retrospect .title h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 7.2vw;
+    font-weight: 700;
+    margin-bottom: 3.5vw;
+}
+
+#retrospect .title p {
+    font-size: 4vw;
+    font-weight: 400;
+    margin-bottom: 15vw;
+}
+
+#retrospect .contents {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+#retrospect ul {
+    display: flex;
+    gap: 4vw;
+    width: calc((50vw + 4vw) * 8);
+}
+
+#retrospect li {
+    width: 50vw;
+    height: 50vw;
+    border-radius: 3vw;
+    background-size: cover;
+}
+
+
+#retrospect .post {
+    background-image: url(../images/sky.avif);
+}
+
+#retrospect li a {
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    width: 100%;
+    height: 100%;
+    border-radius: 3vw;
+    color: white;
+    text-align: center;
+}
+
+#contact-me {
+    padding: 20vw 4vw;
+    border-bottom: 1px solid #DDD;
+}
+
+#contact-me .nudge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12vw 0;
+    border-color: #DDD;
+    border-style: solid;
+    border-width: 0.5vw;
+    border-top: 1vw solid #000;
+    margin-bottom: 12vw;
+}
+
+#contact-me .nudge h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 7.2vw;
+    font-weight: 700;
+    margin-bottom: 4.3vw;
+}
+
+#contact-me .nudge p {
+    font-size: 4vw;
+    font-weight: 400;
+    margin-bottom: 7.3vw;
+    color: #666;
+}
+
+#contact-me button {
+    font-size: 4vw;
+    font-family: 'Lato', sans-serif;
+    display: block;
+    padding: 4.6vw 6vw;
+    border-radius: 8vw;
+    border: 1px solid var(--primary-color);
+    color: #FFF;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+#contact-me button:hover {
+    color: var(--primary-color);
+    background-color: #FFF;
+}
+
+#contact-me button:active {
+    color: #FFF;
+    background-color: var(--primary-color);
+}
+
+
+#contact-me .sns {
+    display: flex;
+    justify-content: center;
+    gap: 7vw;
+}
+
+#contact-me .sns li a {
+    display: block;
+    width: 11vw;
+    height: 11vw;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: -10000px;
+    overflow: hidden;
+}
+
+footer {
+    font-size: 3.2vw;
+    font-weight: 400;
+    padding: 10vw 0;
+    color: #666;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: calc((100% - 1280px) / 2);
+        height: var(--header-height);
+    }
+
+    header a h1 {
+        font-size: 1.1em;
+        letter-spacing: -0.05em;
+        padding: 0;
+        height: 100%;
+        border-bottom: 0;
+    }
+
+    header ul {
+        align-items: center;
+        gap: 2em;
+    }
+
+    header li {
+        width: fit-content;
+    }
+
+    header li:last-child {
+        position: static;
+        padding: 0;
+    }
+
+    header li a {
+        font-size: 1em;
+        padding: 1.7em 1em;
+    }
+
+    header li:last-child a {
+        font-size: 1em;
+        padding: .7em 1.2em;
+        width: fit-content;
+    }
+
+    #introduce {
+        display: flex;
+        flex-direction: column;
+    
+        justify-content: center;
+        align-items: center;
+    
+        padding-top: 5em;
+    }
+    
+    #introduce h2 {
+        font-size: 3em;
+        font-weight: 700;
+        letter-spacing: -0.15vw;
+        margin-bottom: 2vw;
+        text-align: center;
+    }
+    
+    #introduce h3 {
+        font-size: 2em;
+        font-weight: 700;
+        letter-spacing: -0.15vw;
+        margin-bottom: 2vw;
+        text-align: center;
+    }
+    
+    #introduce ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        padding: 1em 0 2em 0;
+        border-bottom: 1px solid #DDD;
+    }
+    
+    #introduce ul li {
+        font-size: 2em;
+        padding: 1em 2em;
+        border-radius: 3em;
+        color: #264148;
+        background-color: var(--secondary-color);
+    }
+
+    #information {
+        font-style: normal;
+        height: 33em;
+        padding: 5em calc((100% - 700px) / 2);
+
+    }
+    
+    #information dl{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    
+    #information dt, dd{
+        font-size: 2em;
+        display: inline-block;
+    }
+
+    #information dt {
+        font-weight: 700;
+        margin-right: 100%;
+
+        width: 5em;
+    }
+
+    #projects {
+        margin-bottom: 20em;
+        padding: 8em calc((100% - 1280px) / 2);
+        height: 26em;
+        background-color: var(--secondary-color);
+    }
+    
+    #projects .title {
+        margin-bottom: 0;
+    }
+
+    #projects .title h3 {
+        font-size: 2em;
+        font-family: 'Lato', sans-serif;
+        margin-right: 0.5em;
+        font-weight: 700;
+        display: inline-block;
+    }
+    
+    #projects .title p {
+        font-size: 1.1em;
+        display: inline-block;
+    }
+    
+    #projects ul {
+        display: flex;
+        flex-direction: row;
+        gap: 0.9em;
+    }
+    
+    #projects .card {
+        width: 26em;
+        height: 27.5em;
+        border-radius: 1.5em;
+        box-shadow: 0 0.6em 1.3em rgba(0, 0, 0, 0.05);
+    }
+
+    #projects .card:hover {
+        transform: translate3d(0, -1em, 0);
+        box-shadow: 0 0.6em 1.3em rgba(0, 0, 0, 0.25);
+    }
+    
+    #projects .thumbnail {
+        height: 45%;
+    }
+    
+    #projects .thumbnail img {
+        left: 0;
+        width: 100%;
+        transform: translate3d(0, -50%, 0);
+    }
+    
+    #projects .card .content {
+        display: flex;
+        flex-direction: column;
+        margin: 1.6em;
+        align-items: center;
+    }
+    
+    #projects .content dt {
+        font-size: 1.2em;
+        font-weight: 700;
+        margin-bottom: 1.2em;
+    }
+    
+    #projects .content dd {
+        font-size: 1.1em;
+        line-height: 1.6em;
+    }
+    
+    #projects .go-site {
+        font-size: 0.9em;
+        margin: 0 auto;
+        width: fit-content;
+        padding: 1em 2.6em;
+        border-radius: 4em;
+    }
+    
+    #projects .go-site .icon {
+        width: 0.8em;
+        height: 0.8em;
+    }
+
+    #experience {
+        padding: 8em calc((100% - (1280px)) / 2) 2.5em; 
+    }
+
+    #experience .title {
+        margin-bottom: 0;
+        border-bottom: 2px solid #000;
+    }
+
+    
+    #experience .title h3 {
+        font-size: 2em;
+        display: inline-block;
+        margin-right: 1em;
+        margin-bottom: 0;
+    }
+    
+    #experience .title p {
+        font-size: 1.1em;
+        display: inline-block;
+    }
+
+    #experience li {
+        display: flex;
+        padding: 0;
+        height: 6.3em;
+    }
+    
+    #experience li p {
+        font-size: 1.1em;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    
+    #experience .institution {
+        margin: 0 1em;
+        width: 20%;
+    }
+    
+    #experience .course {
+        margin-bottom: 0;
+        width: 60%;
+    }
+
+    #retrospect {
+        padding: 13em calc((100% - 1280px) / 2);
+    }
+
+    #retrospect .title h3 {
+        font-family: 'Lato', sans-serif;
+        font-size: 2em;
+        font-weight: 700;
+        display: inline-block;
+        margin-right: 0.5em;
+    }
+    
+    #retrospect .title p {
+        font-size: 1.1em;
+        display: inline-block;
+        margin-bottom: 2.1em;
+    }
+    
+    #retrospect .contents {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #retrospect ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.9em;
+    }
+    
+    #retrospect li {
+        width: 19em;
+        height: 19em;
+        border-radius: 1.4em;
+    }
+    
+    #retrospect li a {
+        display: none;
+    }
+    
+    #retrospect li:hover a {
+        font-size: 1.3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5em;
+        width: 100%;
+        height: 100%;
+        border-radius: 1.4em;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #contact-me {
+        padding: 9em calc((100% - 1280px) / 2) 2.5em;         
+    }
+    
+    #contact-me .nudge {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        padding: 3.7em;
+        border-width: 1px;
+        border-top: 2px solid #000;
+        margin-bottom: 2.5em;
+    }
+    
+    #contact-me .nudge h3 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+    }
+    
+    #contact-me .nudge p {
+        font-size: 1.1em;
+        margin-bottom: 0;
+    }
+    
+    #contact-me button {
+        font-size: 1.1em;
+        padding: 1em 2.9em;
+        border-radius: 3.1em;
+        color: #FFF;
+        background-color: var(--primary-color);
+        text-transform: uppercase;
+    }
+    
+    #contact-me .sns {
+        display: flex;
+        justify-content: center;
+        gap: 2.5em;
+    }
+    
+    #contact-me .sns li a {
+        width: 3.7em;
+        height: 3.7em;
+    }
+
+    footer {
+        font-size: 0.9em;
+        padding: 2.6em 0;
+    }
+}
